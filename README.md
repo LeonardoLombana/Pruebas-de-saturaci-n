@@ -3,20 +3,20 @@
 > Este aplicativo esta hecho para uso libre, acontinuación su función:
 
 ## Descripción
-Para este proyecto consistio en realizar una prueba tecnica de automatización en la pagina OrangeHrm con la finalidad de crear un candidato para aplicar a un puesto de trabajo en el area de tecnologia, posteriormente de acuerdo al reclutador asignado generar una hara y fecha para entrevista, finalmente continuar con los pasos correspondientes de protocolo hasta que el candidato apareciera en la lista de candidatos como contratado, dando por finalizada una vez el sistema mostraba el estado como "Hired" 
+Para este proyecto se realizaron las pruebas en una pagina web de referencia la intensión es saturar el servicio para determinar cual es su maximo de visitas ya que en un momento dado la compañia ya sea por una publicación una propuesta de valor para los usuarios podria llegar a un limite y salir de servicio o estar disponible en la web para los usuarios.
+
+Inicialmente se simulo una cantidad de 10 visitas por segundo posteriormente se fue aumentando la cantidad de solicitudes en las visitas hasta completar un total de 150 visitas por segundo siendo esta la cantidad maxima que permitio la pagina antes de que se perdiera el servicio de acceso a la pagina desde el servidor donde se encuentra alojada.
 Ejecutado segun la parametrización de los requerimientos de la app, de acuerdo a la información de la prueba se debe ejecutar lo siguiente:
 
-Ejercicio 1
-1. Iniciar sesion en la plataforma
-2. Seleccionar la opción de recruitment
-3. Adicionar un candidato
-4. Llenar el perfil con los datos requeridos
-5. Asegurar el almacenamiento de usuario en la DB
-6. Agendar cita simulada con fecha y hora entrevista con el candidato
-7. Realizar los procedimientos de entrevista ejecutada con exito
-8. Realizar procedimiento de ofrecimiento de oferta laboral, 
-9. Realizar actualizacion de perfil como contratado
-10. Validar que el candidato se encuentre en la lista principal con estado Hired
+Pruebas
+
+1. Seleccionar la pestaña o enlace de la url a visitar
+2. Configurar Jmeter con los parametros de solicitud GET y https
+3. Realizar una prueba de conectividad con una visita por segundo
+4. Comfigurar la cantidad minima por segundo a 10 visitas.
+5. Aumentar la cantidad de visitas a 50 por segundo, probar.
+6. Aumentar la cantidad de visitas a 100 por segundo, probar.
+7. Aumentar el rango de visitas hasta que se pueda identificar una caida en el servicio.
 
 > [!TIP]
 > Estos son los requisitos para poder ejecutar las pruebas automatizadas
@@ -26,9 +26,9 @@ Ejercicio 1
 - Conecta tu GitHub
 - Clona el repositorio en tu computadora
 - Trabaja con el proyecto de forma local
-- usar visual studio code
-- instalar los archivos node_modules con npm i cypress
-- ejecutar cypress con npm run test1 como se identifica en el archivo package.json "scripts"
+- Iniciar Jmeter
+- Ejecutar el archivo contenido en el repositorio
+  
 
 # Tecnologias usadas:
 - JMeter
