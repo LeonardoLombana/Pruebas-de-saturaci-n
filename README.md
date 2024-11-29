@@ -27,7 +27,7 @@ Pruebas
 - Clona el repositorio en tu computadora
 - Trabaja con el proyecto de forma local
 - Iniciar Jmeter
-- Ejecutar el archivo contenido en el repositorio
+- Ejecutar el archivo contenido en el repositorio (HTTP Request Defaults.jmx)
   
 
 # Tecnologias usadas:
